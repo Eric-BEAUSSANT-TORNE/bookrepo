@@ -11,3 +11,9 @@
 .main-body {grid-column: 1 / 4;}
 .main-body #amasing_text {text-align: center;}
 .main-body #letsDoIt {text-align: center;}
+
+.wrapper2 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 150px 300px 50px;
+}
