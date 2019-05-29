@@ -49,12 +49,13 @@
         else
         {
           echo 'Uppladdning lyckad!';
-        }
+        
         //Saves file
         move_uploaded_file($_FILES['fileToUpload']['tmp_name'],
             './' . $_FILES['fileToUpload']['name']);
 
             $_SESSION['upedfile'] = './' . $_FILES['fileToUpload']['name'];
+          }
       }
 
       function pre_r($array){
