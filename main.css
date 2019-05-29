@@ -1,0 +1,13 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 150px 300px 50px;
+
+}
+
+.head { grid-column: 1 / 4;
+  background-color: blue}
+.head h1 {text-align: center;}
+.main-body {grid-column: 1 / 4;}
+.main-body #amasing_text {text-align: center;}
+.main-body #letsDoIt {text-align: center;}
