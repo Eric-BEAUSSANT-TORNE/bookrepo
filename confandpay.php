@@ -14,9 +14,9 @@
       <div class="left-body">
         <p>Dina böcker:</p>
         <?php
-        /*    session_start();
+            session_start();
 
-            echo $_FILES['fileToUpload']['name'];
+            echo $_SESSION ['upedfile'];
             echo "<html><body><table>\n\n";
             $f = fopen($_SESSION["upedfile"], "r");
             while (($line = fgetcsv($f)) !== false) {
@@ -27,7 +27,7 @@
                     echo "</tr>\n";
             }
             fclose($f);
-            echo "\n</table></body></html>";*/
+            echo "\n</table></body></html>";
          ?>
       </div>
       <div class="right-body">
