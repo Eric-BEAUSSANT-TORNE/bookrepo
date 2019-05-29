@@ -14,7 +14,7 @@
       <div class="main-body">
         <p id="amasing_text">Something amasing will happen with your CSV if you give me all your money.</p>
         <br><br>
-        <p id="letsDoIt"><button type="button" name="LetsDoIt">Let's do it!</button></p>
+        <p id="letsDoIt"><button type="button" onclick="window.location.href='./uploads.php'">Let's do it!</button></p>
 
 
       </div>

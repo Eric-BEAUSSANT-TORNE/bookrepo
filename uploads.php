@@ -18,9 +18,30 @@
       </form>
 
       </div>
+<?php
+if (isset($_FILES)) {
+    $check = true;
+    if ($_FILES['fileToUpload']['type'] !== 'text/plain') {
+        $check = false;
+    }
 
+if ($check) {
 
-    </div>
+      $path = realpath('./') . '/UploadedFiles/' . $_FILES['fileToUpload']['name'];
+
+        if(move_uploaded_file($_FILES['fileToUpload']['tmp_name'], "$path")) {
+            echo "Filen ". basename( $_FILES["fileToUpload"]["name"]). " har laddat up.";
+            ?>
+            <form action="user_data.php">
+                <input type="submit" value="Försätta>>">
+            </form>
+        <?php
+        } else {
+            echo "Tyvär det var nån fel me laddaup fil.";
+        }
+    }
+}
+?>
 
   </body>
 </html>
